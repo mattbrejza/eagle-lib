@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3917,6 +3917,19 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="-0.8" y1="-2" x2="0.8" y2="-2" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-2" x2="0.8" y2="-1.6" width="0.127" layer="21"/>
 </package>
+<package name="SPDT_MFP106D">
+<pad name="COM" x="0" y="0" drill="1.3" shape="octagon"/>
+<pad name="P2" x="4.6" y="0" drill="1.3" shape="octagon"/>
+<pad name="P1" x="-4.6" y="0" drill="1.3" shape="octagon"/>
+<wire x1="6.5" y1="3.5" x2="-6.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="3.5" x2="-6.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="-3.5" x2="6.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="6.5" y1="-3.5" x2="6.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="3.5" x2="6.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="3.5" x2="6.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-3.5" x2="-6.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-3.5" x2="-6.5" y2="3.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IGFNA">
@@ -5662,6 +5675,23 @@ Source: http://www.infineon.com/upload/Document/BSP170P_Rev2.4.pdf</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 <connect gate="G$1" pin="VOUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT_CHP_MFP106D">
+<gates>
+<gate name="G$1" symbol="SPDT_SLIDE_SYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPDT_MFP106D">
+<connects>
+<connect gate="G$1" pin="COM0" pad="COM"/>
+<connect gate="G$1" pin="NC0" pad="P1"/>
+<connect gate="G$1" pin="NO0" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
