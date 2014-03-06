@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3951,6 +3951,40 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="1.75" y1="-4" x2="-1.75" y2="-4" width="0" layer="51"/>
 <wire x1="-1.75" y1="-4" x2="-1.75" y2="-3" width="0" layer="51"/>
 </package>
+<package name="DPAK_REG">
+<smd name="VOUT" x="0" y="3.1" dx="6.3" dy="6.1" layer="1"/>
+<smd name="GND_ADJ" x="-2.286" y="-3.2" dx="1.5" dy="2.8" layer="1"/>
+<smd name="VIN" x="2.286" y="-3.2" dx="1.5" dy="2.8" layer="1"/>
+<wire x1="-3.3" y1="5.4" x2="3.3" y2="5.4" width="0.127" layer="51"/>
+<wire x1="3.3" y1="5.4" x2="3.3" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="3.3" y1="-0.8" x2="0.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.8" x2="-3.3" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-3.3" y1="-0.8" x2="-3.3" y2="5.4" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-1.8" x2="0.6" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-1.8" x2="0.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-3.3" y1="-0.2" x2="-3.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-0.8" x2="-0.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-0.8" x2="0.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.8" x2="3.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-0.8" x2="3.3" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.8" x2="0.6" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-1.8" x2="0.6" y2="-0.8" width="0.127" layer="21"/>
+</package>
+<package name="D2PAK_REGADJ">
+<smd name="TAB" x="-4.318" y="0" dx="10.668" dy="8.382" layer="1" rot="R90"/>
+<smd name="GND" x="6.096" y="0" dx="1.016" dy="3.048" layer="1" rot="R90"/>
+<smd name="VOUT" x="6.096" y="1.7018" dx="1.016" dy="3.048" layer="1" rot="R90"/>
+<smd name="ADJ" x="6.096" y="3.4036" dx="1.016" dy="3.048" layer="1" rot="R90"/>
+<smd name="VIN" x="6.096" y="-1.7018" dx="1.016" dy="3.048" layer="1" rot="R90"/>
+<smd name="EN" x="6.096" y="-3.4036" dx="1.016" dy="3.048" layer="1" rot="R90"/>
+<wire x1="-7.366" y1="5.588" x2="2.032" y2="5.588" width="0.127" layer="51"/>
+<wire x1="2.032" y1="5.588" x2="2.032" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="2.032" y1="-5.588" x2="-7.366" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="-7.366" y1="-5.588" x2="-7.366" y2="5.588" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IGFNA">
@@ -4930,6 +4964,18 @@ MAX3223-MAX3243.pdf</description>
 <pin name="VOUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <text x="-4.572" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="LDO_REG_ADJ">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="EN" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="GND" x="0" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+<pin name="ADJ" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-3.556" y="8.128" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="EDGE05-2-F" prefix="SV" uservalue="yes">
@@ -5714,6 +5760,42 @@ Source: http://www.infineon.com/upload/Document/BSP170P_Rev2.4.pdf</description>
 <connect gate="G$1" pin="COM0" pad="COM"/>
 <connect gate="G$1" pin="NC0" pad="P1"/>
 <connect gate="G$1" pin="NO0" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REG_LD1086_DPAK">
+<gates>
+<gate name="G$1" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK_REG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND_ADJ"/>
+<connect gate="G$1" pin="IN" pad="VIN"/>
+<connect gate="G$1" pin="OUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP59150_LDO_ADJ_REG">
+<gates>
+<gate name="G$1" symbol="LDO_REG_ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2PAK_REGADJ">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="ADJ"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND TAB"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT"/>
 </connects>
 <technologies>
 <technology name=""/>
