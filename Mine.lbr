@@ -4260,12 +4260,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="4" x="2.5" y="6" drill="1.2"/>
 <hole x="-4.5" y="-0.25" drill="1.8"/>
 <hole x="4.5" y="-0.25" drill="1.8"/>
-<wire x1="5.75" y1="11.75" x2="-5.75" y2="11.75" width="0.127" layer="21"/>
-<wire x1="-5.75" y1="11.75" x2="-5.75" y2="6" width="0.127" layer="21"/>
 <wire x1="-5.75" y1="6" x2="-3.75" y2="6" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="6" x2="1.25" y2="6" width="0.127" layer="21"/>
 <wire x1="3.75" y1="6" x2="5.75" y2="6" width="0.127" layer="21"/>
-<wire x1="5.75" y1="6" x2="5.75" y2="11.75" width="0.127" layer="21"/>
 <wire x1="-5.75" y1="6" x2="-5.75" y2="-5.75" width="0.127" layer="21"/>
 <wire x1="-5.75" y1="-5.75" x2="-3.5" y2="-5.75" width="0.127" layer="21"/>
 <wire x1="5.75" y1="6" x2="5.75" y2="-5.75" width="0.127" layer="21"/>
