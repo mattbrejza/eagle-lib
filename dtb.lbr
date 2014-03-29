@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3985,6 +3985,12 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="2.032" y1="-5.588" x2="-7.366" y2="-5.588" width="0.127" layer="51"/>
 <wire x1="-7.366" y1="-5.588" x2="-7.366" y2="5.588" width="0.127" layer="51"/>
 </package>
+<package name="GND-LOOP-0.4">
+<pad name="P$3" x="-5.08" y="0" drill="1.15" shape="octagon"/>
+<pad name="P$4" x="5.08" y="0" drill="1.15" shape="octagon"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="1.016" layer="51"/>
+<text x="-1.651" y="-0.60325" size="1.27" layer="21" font="vector" ratio="15">GND</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IGFNA">
@@ -5014,6 +5020,15 @@ MAX3223-MAX3243.pdf</description>
 </gates>
 <devices>
 <device name="" package="GND-LOOP">
+<connects>
+<connect gate="G$1" pin="1" pad="P$3"/>
+<connect gate="G$1" pin="2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="GND-LOOP-0.4">
 <connects>
 <connect gate="G$1" pin="1" pad="P$3"/>
 <connect gate="G$1" pin="2" pad="P$4"/>
