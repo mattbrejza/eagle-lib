@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7023,6 +7023,44 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="CLK2" x="-15.24" y="30.48" length="middle"/>
 <pin name="CLK3" x="-15.24" y="27.94" length="middle"/>
 </symbol>
+<symbol name="MCP6N11">
+<pin name="INP" x="-12.7" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="INN" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="V+" x="-5.08" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="-5.08" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUT" x="22.86" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="VREF" x="7.62" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<pin name="VFG" x="10.16" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.2136" y2="-1.8034" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="9.7536" y2="-1.8034" width="0.1524" layer="94"/>
+<wire x1="9.779" y1="-1.8542" x2="9.3726" y2="-1.1176" width="0.1524" layer="94"/>
+<text x="-2.032" y="1.651" size="1.778" layer="97">+</text>
+<text x="-1.7272" y="-3.2004" size="1.778" layer="97">-</text>
+<text x="5.1562" y="-9.8552" size="0.8128" layer="97">REF</text>
+<text x="12.0396" y="-9.6774" size="0.8128" layer="97">FG</text>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
+<text x="10.795" y="-9.525" size="1.27" layer="97">V</text>
+<text x="3.81" y="-9.525" size="1.27" layer="97">V</text>
+<wire x1="12.7" y1="0" x2="17.78" y2="0" width="0.1524" layer="94"/>
+<pin name="EN" x="12.7" y="15.24" length="middle" direction="in" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS5A3359">
@@ -9849,6 +9887,28 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="VCC1" pad="36"/>
 <connect gate="G$1" pin="VCCO0" pad="6"/>
 <connect gate="G$1" pin="VCCO1" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6N11">
+<gates>
+<gate name="G$1" symbol="MCP6N11" x="-10.16" y="-25.4"/>
+</gates>
+<devices>
+<device name="" package="SO-08">
+<connects>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INN" pad="2"/>
+<connect gate="G$1" pin="INP" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="V+" pad="7"/>
+<connect gate="G$1" pin="VFG" pad="1"/>
+<connect gate="G$1" pin="VREF" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
