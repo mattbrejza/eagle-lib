@@ -126,16 +126,16 @@
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-1.27" y1="2.8575" x2="1.27" y2="2.8575" width="0.127" layer="21"/>
 <wire x1="-8.255" y1="2.54" x2="-8.255" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="-1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="3" x="-2.54" y="-1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="5" x="0" y="-1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="7" x="2.54" y="-1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="9" x="5.08" y="-1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="2" x="-5.08" y="1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="4" x="-2.54" y="1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="6" x="0" y="1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="8" x="2.54" y="1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="10" x="5.08" y="1.27" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="1" x="-5.08" y="-1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="3" x="-2.54" y="-1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="5" x="0" y="-1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="7" x="2.54" y="-1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="9" x="5.08" y="-1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="2" x="-5.08" y="1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="-2.54" y="1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="6" x="0" y="1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="8" x="2.54" y="1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="10" x="5.08" y="1.27" drill="0.9" diameter="1.4224" shape="octagon"/>
 <text x="-5.588" y="-4.191" size="1.27" layer="51" ratio="10">1</text>
 <text x="-6.35" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
