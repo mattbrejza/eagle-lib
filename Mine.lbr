@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5306,6 +5306,18 @@ Source: CYPRESS cy7c1049cv33_8.pdf</description>
 <circle x="-1.15" y="-1.2" radius="0.070709375" width="0.127" layer="21"/>
 <wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="KEYSTONE53">
+<smd name="P1" x="-28.77" y="0" dx="4" dy="2.6" layer="1"/>
+<smd name="P2" x="-15.97" y="0" dx="3.96" dy="5.08" layer="1"/>
+<smd name="N2" x="27.53" y="0" dx="4" dy="2.6" layer="1"/>
+<smd name="N1" x="14.73" y="0" dx="3.96" dy="5.08" layer="1"/>
+<text x="-12.67" y="-3.3" size="6.4516" layer="21" font="vector" ratio="13">+</text>
+<text x="7.13" y="-3.2" size="6.4516" layer="21" font="vector" ratio="13">-</text>
+<wire x1="24" y1="7" x2="-25" y2="7" width="0.127" layer="21"/>
+<wire x1="-25" y1="7" x2="-25" y2="-7" width="0.127" layer="21"/>
+<wire x1="-25" y1="-7" x2="24" y2="-7" width="0.127" layer="21"/>
+<wire x1="24" y1="-7" x2="24" y2="7" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -11538,6 +11550,22 @@ Source: STM32F2_LQFP144.bsd</description>
 <connect gate="G$1" pin="SW" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KEYSTONE-53">
+<gates>
+<gate name="G$1" symbol="CELL" x="-2.54" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="KEYSTONE53">
+<connects>
+<connect gate="G$1" pin="+" pad="P1 P2"/>
+<connect gate="G$1" pin="-" pad="N1 N2"/>
 </connects>
 <technologies>
 <technology name=""/>
