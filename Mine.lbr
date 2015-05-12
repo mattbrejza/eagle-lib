@@ -18392,10 +18392,10 @@ Source: CYPRESS cy7c1049cv33_8.pdf</description>
 <wire x1="-15.2" y1="12.2" x2="-17.4" y2="12.2" width="0.127" layer="51"/>
 <wire x1="0" y1="12.2" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="-0.6" y2="0" width="0.127" layer="21"/>
-<wire x1="-14.2" y1="0" x2="-15.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-14.2" y1="0" x2="-15.2" y2="0" width="0.127" layer="51"/>
 <wire x1="-15.2" y1="0" x2="-15.2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="0" y1="12.2" x2="-0.6" y2="12.2" width="0.127" layer="21"/>
-<wire x1="-14.2" y1="12.2" x2="-15.2" y2="12.2" width="0.127" layer="21"/>
+<wire x1="-14.2" y1="12.2" x2="-15.2" y2="12.2" width="0.127" layer="51"/>
 </package>
 <package name="ESP-07">
 <wire x1="0.25" y1="0" x2="-14.45" y2="0" width="0.127" layer="51"/>
@@ -18420,10 +18420,8 @@ Source: CYPRESS cy7c1049cv33_8.pdf</description>
 <wire x1="-14.45" y1="15.95" x2="-19.9" y2="15.95" width="0.127" layer="51"/>
 <wire x1="0.25" y1="15.95" x2="0.25" y2="0" width="0.127" layer="21"/>
 <wire x1="0.25" y1="0" x2="-0.6" y2="0" width="0.127" layer="21"/>
-<wire x1="-14.2" y1="0" x2="-14.45" y2="0" width="0.127" layer="21"/>
 <wire x1="-14.45" y1="0" x2="-14.45" y2="15.95" width="0.127" layer="51"/>
 <wire x1="0.25" y1="15.95" x2="-0.6" y2="15.95" width="0.127" layer="21"/>
-<wire x1="-14.2" y1="15.95" x2="-14.45" y2="15.95" width="0.127" layer="21"/>
 </package>
 <package name="MA06-1-SMD">
 <smd name="1" x="-7.62" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
