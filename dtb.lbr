@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3614,8 +3614,8 @@ P-TO252-5-1 SIEMENS TLE4270</description>
 <pad name="6" x="22.6" y="-0.1" drill="0.6" shape="long" rot="R90"/>
 <pad name="7" x="21.1" y="-0.1" drill="0.6" shape="long" rot="R90"/>
 <pad name="8" x="19.6" y="-0.1" drill="0.6" shape="long" rot="R90"/>
-<pad name="A" x="56" y="15.24" drill="0.6" diameter="1.27" shape="long" rot="R180"/>
-<pad name="K" x="56" y="17.74" drill="0.6" diameter="1.27" shape="long" rot="R180"/>
+<pad name="A" x="56" y="15.24" drill="1" diameter="1.27" shape="long" rot="R180"/>
+<pad name="K" x="56" y="17.74" drill="1" diameter="1.27" shape="long" rot="R180"/>
 </package>
 <package name="TSSOP20">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 20&lt;/b&gt;&lt;p&gt;
@@ -7368,6 +7368,39 @@ NS Package M08A</description>
 <text x="-4" y="-12" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-4" y="-14" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
+<package name="LED5MM/SMD">
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="0.142634375" y1="0.883521875" x2="0.66225" y2="0.583521875" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.6482125" y1="-0.536265625" x2="-0.1719" y2="-0.811265625" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.156465625" y1="0.565459375" x2="-0.518965625" y2="-0.062409375" width="0.1016" layer="51"/>
+<wire x1="0.523853125" y1="0.1438125" x2="0.173853125" y2="-0.462403125" width="0.1016" layer="51"/>
+<circle x="0.011834375" y="0.75696875" radius="0.075" width="0.0508" layer="51"/>
+<smd name="K1" x="0.37744375" y="0.690221875" dx="0.8" dy="0.8" layer="1" rot="R330"/>
+<smd name="A1" x="-0.37255625" y="-0.6088125" dx="0.8" dy="0.8" layer="1" rot="R330"/>
+<rectangle x1="-0.013165625" y1="0.811871875" x2="0.186834375" y2="0.961871875" layer="51" rot="R330"/>
+<rectangle x1="0.0484375" y1="0.638665625" x2="0.0984375" y2="0.688665625" layer="51" rot="R330"/>
+<rectangle x1="-0.12186875" y1="0.531190625" x2="-0.07186875" y2="0.906190625" layer="51" rot="R330"/>
+<rectangle x1="0.555553125" y1="0.32191875" x2="0.755553125" y2="0.62191875" layer="51" rot="R330"/>
+<rectangle x1="-0.21630625" y1="0.3287375" x2="0.68369375" y2="0.5537375" layer="51" rot="R330"/>
+<rectangle x1="-0.700665625" y1="-0.553909375" x2="-0.500665625" y2="-0.053909375" layer="51" rot="R330"/>
+<rectangle x1="-0.094446875" y1="-0.903909375" x2="0.105553125" y2="-0.403909375" layer="51" rot="R330"/>
+<rectangle x1="-0.50380625" y1="-0.47233125" x2="0.04619375" y2="-0.24733125" layer="51" rot="R330"/>
+<rectangle x1="-0.5424125" y1="-0.416409375" x2="-0.4424125" y2="-0.316409375" layer="51" rot="R330"/>
+<rectangle x1="-0.1527" y1="-0.641409375" x2="-0.0527" y2="-0.541409375" layer="51" rot="R330"/>
+<rectangle x1="-0.06005625" y1="0.02395625" x2="0.18994375" y2="0.27395625" layer="21" rot="R330"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IGFNA">
@@ -10036,6 +10069,15 @@ Source: www.kingbright.com</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM/0603" package="LED5MM/SMD">
+<connects>
+<connect gate="G$1" pin="A" pad="A A1"/>
+<connect gate="G$1" pin="C" pad="K K1"/>
 </connects>
 <technologies>
 <technology name=""/>
