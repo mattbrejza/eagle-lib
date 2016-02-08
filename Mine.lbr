@@ -63,6 +63,8 @@
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -71,6 +73,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -82,16 +85,27 @@
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -121,6 +135,8 @@
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -18890,6 +18906,59 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7042.pdf</description>
 <hole x="-0.35" y="4.1" drill="0.8"/>
 <hole x="0.35" y="4.1" drill="0.8"/>
 </package>
+<package name="M03-HV">
+<wire x1="0" y1="5.588" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="7.62" y1="5.588" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="7.62" y1="5.588" x2="0" y2="5.588" width="0.127" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.127" layer="21"/>
+<wire x1="6.35" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="0" width="0.127" layer="21"/>
+<pad name="1" x="1.27" y="2.54" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="3" x="6.35" y="2.54" drill="1.016" diameter="1.8796"/>
+<wire x1="0" y1="5.588" x2="0" y2="6" width="0.127" layer="51"/>
+<wire x1="0" y1="6" x2="7.62" y2="6" width="0.127" layer="51"/>
+<wire x1="7.62" y1="6" x2="7.62" y2="5.588" width="0.127" layer="51"/>
+</package>
+<package name="GM-TUBE">
+<pad name="A2" x="0" y="0" drill="2" diameter="3.81" shape="octagon"/>
+<pad name="A1" x="-7.25" y="0" drill="2" diameter="3.81" shape="octagon"/>
+<pad name="B1" x="40.5" y="0" drill="2" diameter="3.81" shape="octagon"/>
+<pad name="B2" x="47.75" y="0" drill="2" diameter="3.81" shape="octagon"/>
+<wire x1="-7.25" y1="4" x2="0" y2="4" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-4" x2="0" y2="-4" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="2" x2="-7.25" y2="4" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-4" x2="-7.25" y2="-2" width="0.127" layer="21"/>
+<wire x1="0" y1="-4" x2="0" y2="-2" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="0" y2="4" width="0.127" layer="21"/>
+<wire x1="40.5" y1="2" x2="40.5" y2="4" width="0.127" layer="21"/>
+<wire x1="40.5" y1="-4" x2="40.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="47.75" y1="-4" x2="47.75" y2="-2" width="0.127" layer="21"/>
+<wire x1="47.75" y1="2" x2="47.75" y2="4" width="0.127" layer="21"/>
+<wire x1="40.5" y1="4" x2="47.75" y2="4" width="0.127" layer="21"/>
+<wire x1="40.5" y1="-4" x2="47.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="40.5" y1="4" x2="40.5" y2="4.75" width="0.127" layer="51"/>
+<wire x1="40.5" y1="4.75" x2="47.75" y2="4.75" width="0.127" layer="51"/>
+<wire x1="47.75" y1="4.75" x2="47.75" y2="4" width="0.127" layer="51"/>
+<wire x1="40.5" y1="-4" x2="40.5" y2="-4.75" width="0.127" layer="51"/>
+<wire x1="40.5" y1="-4.75" x2="47.75" y2="-4.75" width="0.127" layer="51"/>
+<wire x1="47.75" y1="-4.75" x2="47.75" y2="-4" width="0.127" layer="51"/>
+<wire x1="40.5" y1="-4" x2="0" y2="-4" width="0.127" layer="51"/>
+<wire x1="0" y1="4" x2="40.5" y2="4" width="0.127" layer="51"/>
+<wire x1="0" y1="4" x2="0" y2="4.75" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="4" x2="-7.25" y2="4.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-4.75" x2="0" y2="-4" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="-4.75" x2="-7.25" y2="-4" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="-4.75" x2="0" y2="-4.75" width="0.127" layer="51"/>
+<wire x1="0" y1="4.75" x2="-7.25" y2="4.75" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="4.75" x2="-7.25" y2="4.5" width="0.127" layer="51"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="0" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="0" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS5A3359">
@@ -22497,6 +22566,17 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7042.pdf</description>
 <text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="GM">
+<pin name="+" x="0" y="12.7" visible="off" length="middle" rot="R270"/>
+<wire x1="0" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="-" x="-2.54" y="-7.62" visible="off" length="middle" rot="R90"/>
+<text x="0.508" y="8.128" size="1.27" layer="94">+</text>
+<text x="0" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS5A3359">
@@ -25132,6 +25212,15 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="-HV" package="M03-HV">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="JST-ZR-2">
@@ -26558,6 +26647,22 @@ Source: STM32F2_LQFP144.bsd</description>
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="SHIELD" pad="SH1 SH2 SH3 SH4 SH5 SH6 SH7 SH8"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GM-TUBE">
+<gates>
+<gate name="G$1" symbol="GM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GM-TUBE">
+<connects>
+<connect gate="G$1" pin="+" pad="A1 A2"/>
+<connect gate="G$1" pin="-" pad="B1 B2"/>
 </connects>
 <technologies>
 <technology name=""/>
